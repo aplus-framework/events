@@ -1,5 +1,7 @@
 <?php namespace Framework\Events;
 
+use OutOfBoundsException;
+
 /**
  * Class Events.
  */
@@ -18,7 +20,7 @@ class Events
 	public static function trigger(string $name, mixed ...$arguments) : void
 	{
 		if (empty(static::$listeners[$name])) {
-			return;
+			throw new OutOfBoundsException('Undefined event with name "' . $name . '"');
 		}
 		static::$listeners[$name](...$arguments);
 	}

@@ -15,9 +15,8 @@ class EventsTest extends TestCase
 		$contents = \ob_get_clean();
 		$this->assertEquals('bar 1', $contents);
 		Events::remove('foo');
-		\ob_start();
-		Events::trigger('foo', 1);
-		$contents = \ob_get_clean();
-		$this->assertEquals('', $contents);
+		$this->expectException(\OutOfBoundsException::class);
+		$this->expectExceptionMessage('Undefined event with name "foo"');
+		Events::trigger('foo');
 	}
 }
