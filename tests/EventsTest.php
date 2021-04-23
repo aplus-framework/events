@@ -5,18 +5,19 @@ use PHPUnit\Framework\TestCase;
 
 class EventsTest extends TestCase
 {
-	protected Events $events;
-
-	public function setup() : void
+	public function testEvent()
 	{
-		$this->events = new Events();
-	}
-
-	public function testSample()
-	{
-		$this->assertEquals(
-			'Framework\Events\Events::test',
-			$this->events->test()
-		);
+		Events::listen('foo', static function ($a) {
+			echo 'bar ' . $a;
+		});
+		\ob_start();
+		Events::trigger('foo', 1);
+		$contents = \ob_get_clean();
+		$this->assertEquals('bar 1', $contents);
+		Events::remove('foo');
+		\ob_start();
+		Events::trigger('foo', 1);
+		$contents = \ob_get_clean();
+		$this->assertEquals('', $contents);
 	}
 }
