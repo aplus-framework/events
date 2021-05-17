@@ -29,4 +29,9 @@ class Events
 	{
 		unset(static::$listeners[$name]);
 	}
+
+	public static function isListening(string $name) : bool
+	{
+		return isset(static::$listeners[$name]);
+	}
 }
