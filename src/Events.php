@@ -8,7 +8,7 @@ use OutOfBoundsException;
 class Events
 {
 	/**
-	 * @var array|callable[]
+	 * @var array<string,callable>
 	 */
 	protected static array $listeners = [];
 
