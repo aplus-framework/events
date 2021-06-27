@@ -9,6 +9,7 @@
  */
 namespace Framework\Events;
 
+use JetBrains\PhpStorm\Pure;
 use OutOfBoundsException;
 
 /**
@@ -39,6 +40,7 @@ class Events
 		unset(static::$listeners[$name]);
 	}
 
+	#[Pure]
 	public static function isListening(string $name) : bool
 	{
 		return isset(static::$listeners[$name]);
