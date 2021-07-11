@@ -1,37 +1,37 @@
 <?xml version="1.0"?>
 <ruleset name="Mess Detector">
-	<!-- cleancode -->
-	<rule ref="rulesets/cleancode.xml">
-		<exclude name="StaticAccess"/>
-		<exclude name="UndefinedVariable"/>
-	</rule>
-	<!-- codesize -->
-	<rule ref="rulesets/codesize.xml/ExcessiveParameterList">
-		<properties>
-			<property name="minimum" value="7"/>
-		</properties>
-	</rule>
-	<rule ref="rulesets/codesize.xml/TooManyPublicMethods">
-		<properties>
-			<property name="maxmethods" value="20"/>
-		</properties>
-	</rule>
-	<!-- controversial -->
-	<rule ref="rulesets/controversial.xml">
-		<exclude name="CamelCaseVariableName"/>
-	</rule>
-	<!-- design -->
-	<rule ref="rulesets/design.xml"/>
-	<!-- naming -->
-	<rule ref="rulesets/naming.xml/ShortVariable">
-		<properties>
-			<property name="minimum" value="2"/>
-		</properties>
-	</rule>
-	<!-- unusedcode -->
-	<rule ref="rulesets/unusedcode.xml/UnusedLocalVariable">
-		<properties>
-			<property name="exceptions" value="listeners"/>
-		</properties>
-	</rule>
+    <!-- cleancode -->
+    <rule ref="rulesets/cleancode.xml">
+        <exclude name="StaticAccess"/>
+        <exclude name="UndefinedVariable"/>
+    </rule>
+    <!-- codesize -->
+    <rule ref="rulesets/codesize.xml/ExcessiveParameterList">
+        <properties>
+            <property name="minimum" value="7"/>
+        </properties>
+    </rule>
+    <rule ref="rulesets/codesize.xml/TooManyPublicMethods">
+        <properties>
+            <property name="maxmethods" value="20"/>
+        </properties>
+    </rule>
+    <!-- controversial -->
+    <rule ref="rulesets/controversial.xml">
+        <exclude name="CamelCaseVariableName"/>
+    </rule>
+    <!-- design -->
+    <rule ref="rulesets/design.xml"/>
+    <!-- naming -->
+    <rule ref="rulesets/naming.xml/ShortVariable">
+        <properties>
+            <property name="minimum" value="2"/>
+        </properties>
+    </rule>
+    <!-- unusedcode -->
+    <rule ref="rulesets/unusedcode.xml/UnusedLocalVariable">
+        <properties>
+            <property name="exceptions" value="listeners"/>
+        </properties>
+    </rule>
 </ruleset>
