@@ -1,13 +1,13 @@
 {
-    "name": "natanfelles/events",
+    "name": "aplus/events",
     "type": "library",
-    "description": "The Framework Events Library",
+    "description": "Aplus Framework Events Library",
     "keywords": [
         "events",
         "listen",
         "trigger"
     ],
-    "homepage": "https://the-framework.gitlab.io/libraries/events.html",
+    "homepage": "https://aplus-framework.com/docs/events",
     "license": "MIT",
     "authors": [
         {
@@ -47,9 +47,9 @@
     "prefer-stable": true,
     "support": {
         "email": "natanfelles@gmail.com",
-        "issues": "https://gitlab.com/the-framework/libraries/events/issues",
-        "wiki": "https://gitlab.com/the-framework/libraries/events/wikis/home",
-        "source": "https://gitlab.com/the-framework/libraries/events",
-        "docs": "https://the-framework.gitlab.io/libraries/events/docs/"
+        "issues": "https://gitlab.com/aplus-framework/libraries/events/issues",
+        "wiki": "https://gitlab.com/aplus-framework/libraries/events/wikis/home",
+        "source": "https://gitlab.com/aplus-framework/libraries/events",
+        "docs": "https://aplus-framework.gitlab.io/libraries/events/docs/"
     }
 }
