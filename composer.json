@@ -3,7 +3,9 @@
     "type": "library",
     "description": "The Framework Events Library",
     "keywords": [
-        "events"
+        "events",
+        "listen",
+        "trigger"
     ],
     "homepage": "https://the-framework.gitlab.io/libraries/events.html",
     "license": "MIT",
