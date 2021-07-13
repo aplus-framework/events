@@ -1,4 +1,4 @@
-# The Framework Events Library
+# Aplus Framework Events Library
 
 - [Homepage](https://the-framework.gitlab.io/libraries/events.html)
 - [API Documentation](https://the-framework.gitlab.io/libraries/events/docs/)
