@@ -14,6 +14,8 @@ use OutOfBoundsException;
 
 /**
  * Class Events.
+ *
+ * @package events
  */
 class Events
 {
