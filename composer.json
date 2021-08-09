@@ -7,7 +7,7 @@
         "listen",
         "trigger"
     ],
-    "homepage": "https://aplus-framework.com/docs/events",
+    "homepage": "https://docs.aplus-framework.com/guides/libraries/events/",
     "license": "MIT",
     "authors": [
         {
@@ -50,6 +50,6 @@
         "issues": "https://gitlab.com/aplus-framework/libraries/events/issues",
         "wiki": "https://gitlab.com/aplus-framework/libraries/events/wikis/home",
         "source": "https://gitlab.com/aplus-framework/libraries/events",
-        "docs": "https://aplus-framework.gitlab.io/libraries/events/docs/"
+        "docs": "https://docs.aplus-framework.com/guides/libraries/events/"
     }
 }
