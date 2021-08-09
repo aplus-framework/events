@@ -1,7 +1,6 @@
 # Aplus Framework Events Library
 
-- [Homepage](https://aplus-framework.com/docs/events)
-- [API Documentation](https://aplus-framework.gitlab.io/libraries/events/docs/)
+- [Documentation](https://docs.aplus-framework.com/guides/libraries/events/)
 
 [![Pipeline](https://gitlab.com/aplus-framework/libraries/events/badges/master/pipeline.svg)](https://gitlab.com/aplus-framework/libraries/events/-/pipelines?scope=branches)
 [![Coverage](https://gitlab.com/aplus-framework/libraries/events/badges/master/coverage.svg?job=test:php)](https://aplus-framework.gitlab.io/libraries/events/coverage/)
