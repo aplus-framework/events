@@ -10,7 +10,6 @@
 namespace Framework\Events;
 
 use JetBrains\PhpStorm\Pure;
-use OutOfBoundsException;
 
 /**
  * Class Events.
@@ -31,8 +30,8 @@ class Events
 
     public static function trigger(string $name, mixed ...$arguments) : void
     {
-        if (empty(static::$listeners[$name])) {
-            throw new OutOfBoundsException('Undefined event with name "' . $name . '"');
+        if ( ! static::isListening($name)) {
+            return;
         }
         static::$listeners[$name](...$arguments);
     }

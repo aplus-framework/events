@@ -27,8 +27,6 @@ final class EventsTest extends TestCase
         self::assertSame('bar 1', $contents);
         Events::remove('foo');
         self::assertFalse(Events::isListening('foo'));
-        $this->expectException(\OutOfBoundsException::class);
-        $this->expectExceptionMessage('Undefined event with name "foo"');
         Events::trigger('foo');
     }
 }
