@@ -10,6 +10,7 @@
 namespace Framework\Events;
 
 use JetBrains\PhpStorm\Pure;
+use Throwable;
 
 /**
  * Class Events.
@@ -33,7 +34,15 @@ class Events
         if ( ! static::isListening($name)) {
             return;
         }
-        static::$listeners[$name](...$arguments);
+        try {
+            static::$listeners[$name](...$arguments);
+        } catch (Throwable $throwable) {
+            throw new EventsException(
+                'Event "' . $name . '" failed',
+                0,
+                $throwable
+            );
+        }
     }
 
     public static function remove(string $name) : void
