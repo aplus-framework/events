@@ -11,6 +11,8 @@ namespace Framework\Events;
 
 /**
  * Class EventsException.
+ *
+ * @package events
  */
 class EventsException extends \RuntimeException
 {
