@@ -10,6 +10,7 @@
 namespace Tests\Events;
 
 use Framework\Events\Events;
+use Framework\Events\EventsException;
 use PHPUnit\Framework\TestCase;
 
 final class EventsTest extends TestCase
@@ -28,5 +29,15 @@ final class EventsTest extends TestCase
         Events::remove('foo');
         self::assertFalse(Events::isListening('foo'));
         Events::trigger('foo');
+    }
+
+    public function testEventsException() : void
+    {
+        Events::listen('baz', static function () : void {
+            throw new \LogicException('Hohoho');
+        });
+        $this->expectException(EventsException::class);
+        $this->expectExceptionMessage('Event "baz" failed');
+        Events::trigger('baz');
     }
 }
