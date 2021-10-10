@@ -1,3 +1,5 @@
+<a href="https://gitlab.com/aplus-framework/libraries/events"><img src="https://gitlab.com/aplus-framework/libraries/events/-/raw/master/guide/image.png" alt="Aplus Framework Events Library" align="right" width="100"></a>
+
 # Aplus Framework Events Library
 
 - [User Guide](https://docs.aplus-framework.com/guides/libraries/events/index.html)
