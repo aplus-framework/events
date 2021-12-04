@@ -2,6 +2,7 @@
 
 # Aplus Framework Events Library
 
+- [Homepage](https://aplus-framework.com/packages/events)
 - [User Guide](https://docs.aplus-framework.com/guides/libraries/events/index.html)
 - [API Documentation](https://docs.aplus-framework.com/packages/events.html)
 
