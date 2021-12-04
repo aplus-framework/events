@@ -7,7 +7,7 @@
         "listen",
         "trigger"
     ],
-    "homepage": "https://docs.aplus-framework.com/guides/libraries/events/",
+    "homepage": "https://aplus-framework.com/packages/events",
     "license": "MIT",
     "authors": [
         {
@@ -48,13 +48,13 @@
     "support": {
         "email": "support@aplus-framework.com",
         "issues": "https://gitlab.com/aplus-framework/libraries/events/issues",
-        "wiki": "https://gitlab.com/aplus-framework/libraries/events/wikis/home",
+        "forum": "https://aplus-framework.com/forum",
         "source": "https://gitlab.com/aplus-framework/libraries/events",
         "docs": "https://docs.aplus-framework.com/guides/libraries/events/"
     },
     "funding": [
         {
-            "type": "other",
+            "type": "Aplus Sponsor",
             "url": "https://aplus-framework.com/sponsor"
         }
     ]
