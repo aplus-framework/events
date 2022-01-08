@@ -1,6 +1,9 @@
 Events
 ======
 
+.. image:: image.png
+    :alt: Aplus Framework Events Library
+
 Aplus Framework Events Library.
 
 - `Installation`_
