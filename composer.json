@@ -18,9 +18,9 @@
     "homepage": "https://aplus-framework.com/packages/events",
     "support": {
         "email": "support@aplus-framework.com",
-        "issues": "https://gitlab.com/aplus-framework/libraries/events/issues",
+        "issues": "https://github.com/aplus-framework/events/issues",
         "forum": "https://aplus-framework.com/forum",
-        "source": "https://gitlab.com/aplus-framework/libraries/events",
+        "source": "https://github.com/aplus-framework/events",
         "docs": "https://docs.aplus-framework.com/guides/libraries/events/"
     },
     "funding": [
