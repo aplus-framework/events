@@ -31,7 +31,7 @@ class Events
 
     public static function trigger(string $name, mixed ...$arguments) : void
     {
-        if ( ! static::isListening($name)) {
+        if (!static::isListening($name)) {
             return;
         }
         try {
